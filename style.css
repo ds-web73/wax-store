@@ -1,0 +1,443 @@
+/*
+Theme Name: Wax Store
+Theme URI: https://github.com/ds-web73/wax-store
+Author: DS-Web
+Author URI: https://github.com/ds-web73
+Description: A block theme for record shops and second-hand music dealers: vinyl, CD, cassettes and merchandise. Covers take center stage, sections and the artist index look like the dividers of a record bin, and prices sit on round stickers. Works on its own for a shop blog and pages; pair it with the Wax Store Catalog plugin for the catalog, filters, grading and copies for sale.
+Requires at least: 6.7
+Tested up to: 7.1
+Requires PHP: 7.4
+Version: 0.1.11
+License: GNU General Public License v2 or later
+License URI: https://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: wax-store
+Domain Path: /languages
+Tags: e-commerce, blog, entertainment, grid-layout, one-column, block-patterns, block-styles, custom-colors, editor-style, full-site-editing, style-variations, translation-ready, wide-blocks
+*/
+
+/* Colors of the catalog plugin elements (price sticker, sold sticker, record placeholder). */
+:root {
+	--waxsc-sticker: var(--wp--preset--color--sticker);
+	--waxsc-sticker-text: var(--wp--custom--on-sticker);
+	--waxsc-sold: var(--wp--preset--color--groove);
+	--waxsc-muted: var(--wp--preset--color--groove);
+	--waxsc-cover-bg: var(--wp--preset--color--groove);
+	--waxsc-cover-disc: var(--wp--preset--color--ink);
+	--waxsc-cover-label: var(--wp--preset--color--divider);
+}
+
+/* Condensed display type, like the spine of a sleeve. */
+h1, h2, h3, h4,
+.wp-block-site-title,
+.waxsc-artist,
+.waxsc-index,
+.is-style-divider > :first-child,
+.waxsc-divider > :first-child {
+	font-stretch: 68%;
+}
+
+/* Long text in the text face; catalog blocks and query loops stay in Archivo. */
+.wp-block-post-content :where(p, li, blockquote, dd) {
+	font-family: var(--wp--preset--font-family--source-serif);
+	font-size: 1.125rem;
+	line-height: 1.65;
+}
+
+.wp-block-post-content :where([class*="wp-block-waxsc-"], .wp-block-query, .waxsc-artist) :where(p, li, dd) {
+	font-family: var(--wp--preset--font-family--archivo);
+	font-size: inherit;
+	line-height: inherit;
+}
+
+[class*="wp-block-waxsc-"],
+.waxsc-artist {
+	font-family: var(--wp--preset--font-family--archivo);
+}
+
+/* Album titles read in the text face. */
+.waxsc-card-title,
+.waxsc-release .wp-block-post-title {
+	font-family: var(--wp--preset--font-family--source-serif);
+	font-stretch: 100%;
+	font-weight: 400;
+}
+
+:where(a, button, input, select, textarea, summary, [tabindex]):focus-visible {
+	outline: 3px solid var(--wp--preset--color--ink);
+	outline-offset: 2px;
+}
+
+/* Bin divider: a tab on a bar. Block style for Group, also used by the catalog plugin. */
+.is-style-divider,
+.waxsc-divider {
+	border-bottom: var(--wp--custom--tab--bar) solid var(--wp--preset--color--divider);
+	margin-block-end: var(--wp--preset--spacing--40);
+}
+
+.is-style-divider > :first-child,
+.waxsc-divider > :first-child {
+	width: fit-content;
+	max-width: 100%;
+	margin: 0;
+	padding: 0.4em 1em 0.25em;
+	border-radius: var(--wp--custom--tab--radius) var(--wp--custom--tab--radius) 0 0;
+	background: var(--wp--preset--color--divider);
+	color: var(--wp--custom--on-divider);
+	font-size: var(--wp--preset--font-size--large);
+	line-height: 1.1;
+}
+
+.is-style-divider > * + *,
+.waxsc-divider > * + * {
+	margin-block-start: var(--wp--preset--spacing--30);
+}
+
+/* Keep the tab on the left even inside centered (constrained) layouts. */
+.is-layout-constrained > .is-style-divider > :first-child,
+.is-layout-constrained > .waxsc-divider > :first-child,
+.is-style-divider.is-layout-constrained > :first-child,
+.waxsc-divider.is-layout-constrained > :first-child {
+	margin-left: 0 !important;
+	margin-right: auto !important;
+}
+
+/* Header and footer. */
+.site-header {
+	padding-block: var(--wp--preset--spacing--40);
+}
+
+.site-footer {
+	margin-block-start: var(--wp--preset--spacing--60);
+	padding-block: var(--wp--preset--spacing--50);
+	border-top: var(--wp--custom--tab--bar) solid var(--wp--preset--color--divider);
+}
+
+/* Catalog grid. */
+.waxsc-grid .wp-block-post {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	gap: 0.15rem;
+}
+
+.waxsc-grid .wp-block-post-featured-image {
+	margin-block-end: 0.6rem;
+}
+
+/* No photo yet: the catalog plugin shows a stylized record, in the theme colors. */
+.waxsc-cover-placeholder {
+	background:
+		radial-gradient(circle, var(--wp--preset--color--divider) 0 13%, transparent 13.5%),
+		radial-gradient(circle, var(--wp--preset--color--ink) 0 44%, transparent 44.5%),
+		var(--wp--preset--color--groove);
+}
+
+.waxsc-grid .waxsc-artist {
+	font-size: var(--wp--preset--font-size--large);
+	font-weight: 800;
+	line-height: 1.1;
+}
+
+.waxsc-artist a,
+.waxsc-card-title a {
+	color: inherit;
+	text-decoration: none;
+}
+
+.waxsc-artist a:hover,
+.waxsc-card-title a:hover {
+	text-decoration: underline;
+}
+
+.waxsc-card-title {
+	margin: 0;
+	font-size: var(--wp--preset--font-size--medium);
+	line-height: 1.3;
+}
+
+.wp-block-waxsc-release-summary {
+	color: var(--wp--preset--color--groove);
+	font-size: var(--wp--preset--font-size--small);
+}
+
+.wp-block-waxsc-release-summary p {
+	margin: 0.25rem 0 0;
+}
+
+/* Price sticker, as stuck on the shrink wrap. */
+.waxsc-grid .wp-block-waxsc-release-price {
+	position: absolute;
+	z-index: 1;
+	top: -0.6rem;
+	right: -0.6rem;
+	margin: 0;
+}
+
+.waxsc-price {
+	display: inline-flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 4.5rem;
+	height: 4.5rem;
+	padding: 0.35rem;
+	box-sizing: border-box;
+	border-radius: 50%;
+	background: var(--wp--preset--color--sticker);
+	color: var(--wp--custom--on-sticker);
+	line-height: 1;
+	text-align: center;
+	rotate: -8deg;
+}
+
+/* The amount stays on one line, condensed if needed, so the sticker stays round. */
+.waxsc-price__amount {
+	font-size: 1rem;
+	font-weight: 800;
+	font-stretch: 75%;
+	font-variant-numeric: tabular-nums;
+	white-space: nowrap;
+}
+
+.waxsc-price__from {
+	margin-bottom: 0.15rem;
+	font-size: 0.5625rem;
+	font-weight: 600;
+	font-stretch: 85%;
+	line-height: 1.1;
+}
+
+.waxsc-price--sold {
+	background: var(--wp--preset--color--groove);
+}
+
+/* Artist index: the letters of the bin dividers. */
+.waxsc-index__list {
+	gap: 0.15rem;
+}
+
+.waxsc-index__letter {
+	border-top: 3px solid transparent;
+	color: var(--wp--preset--color--groove);
+	font-weight: 700;
+	text-decoration: none;
+}
+
+a.waxsc-index__letter:hover,
+.waxsc-index__letter.is-current {
+	border-top-color: var(--wp--preset--color--divider);
+	color: var(--wp--preset--color--ink);
+}
+
+/* Filters. */
+.waxsc-filters {
+	margin-block: var(--wp--preset--spacing--30) var(--wp--preset--spacing--40);
+}
+
+.waxsc-filters label {
+	font-size: var(--wp--preset--font-size--small);
+	font-weight: 700;
+}
+
+.waxsc-filters input[type="search"],
+.waxsc-filters select {
+	min-width: 12rem;
+	padding: 0.55rem 0.75rem;
+	border: 1px solid var(--wp--preset--color--ink);
+	border-radius: 3px;
+	background: var(--wp--preset--color--board);
+	color: var(--wp--preset--color--ink);
+	font: inherit;
+}
+
+.waxsc-filters__reset {
+	align-self: center;
+	font-size: var(--wp--preset--font-size--small);
+}
+
+/* Release page. */
+.waxsc-release__columns {
+	gap: var(--wp--preset--spacing--50);
+	margin-block-start: var(--wp--preset--spacing--40);
+}
+
+.waxsc-release .waxsc-artist {
+	font-size: var(--wp--preset--font-size--x-large);
+	font-weight: 800;
+	line-height: 1;
+}
+
+.waxsc-release .wp-block-post-title {
+	margin-block-start: 0.25rem;
+	font-size: var(--wp--preset--font-size--x-large);
+	line-height: 1.15;
+}
+
+.waxsc-copies__title,
+.waxsc-tracklist__title {
+	font-size: var(--wp--preset--font-size--large);
+}
+
+.waxsc-copy {
+	border-bottom-color: color-mix(in srgb, var(--wp--preset--color--groove) 35%, transparent);
+}
+
+.waxsc-copy__info p + p {
+	color: var(--wp--preset--color--groove);
+	font-size: var(--wp--preset--font-size--small);
+}
+
+.waxsc-copy__status {
+	display: block;
+	color: var(--wp--preset--color--groove);
+	font-size: var(--wp--preset--font-size--small);
+	font-weight: 400;
+}
+
+.waxsc-action {
+	display: inline-block;
+	margin-block-start: var(--wp--preset--spacing--30);
+}
+
+.waxsc-action--reserve {
+	padding: 0.75em 1.4em;
+	border-radius: 3px;
+	background: var(--wp--preset--color--ink);
+	color: var(--wp--preset--color--sleeve);
+	font-weight: 700;
+	text-decoration: none;
+}
+
+.waxsc-action--reserve:hover {
+	background: var(--wp--preset--color--divider);
+	color: var(--wp--custom--on-divider);
+}
+
+.waxsc-details {
+	margin-block-start: var(--wp--preset--spacing--40);
+	font-size: var(--wp--preset--font-size--small);
+}
+
+.waxsc-details dt {
+	color: var(--wp--preset--color--groove);
+}
+
+.waxsc-tracklist {
+	max-width: 760px;
+	margin-block-start: var(--wp--preset--spacing--50);
+}
+
+.waxsc-tracklist__list li {
+	border-bottom: 1px solid color-mix(in srgb, var(--wp--preset--color--groove) 25%, transparent);
+}
+
+.waxsc-track__position,
+.waxsc-track__duration {
+	color: var(--wp--preset--color--groove);
+	font-variant-numeric: tabular-nums;
+}
+
+.waxsc-track__title {
+	font-family: var(--wp--preset--font-family--source-serif);
+}
+
+/* Reserve a copy, on the release page. */
+.waxsc-copy__reserve {
+	padding: 0.35em 0.9em;
+	border-radius: 3px;
+	background: var(--wp--preset--color--ink);
+	color: var(--wp--preset--color--sleeve);
+	font-size: var(--wp--preset--font-size--small);
+	font-weight: 700;
+	text-decoration: none;
+	white-space: nowrap;
+}
+
+.waxsc-copy__reserve:hover {
+	background: var(--wp--preset--color--divider);
+	color: var(--wp--custom--on-divider);
+}
+
+/* Reservation form. */
+.waxsc-reservation {
+	font-family: var(--wp--preset--font-family--archivo);
+}
+
+.waxsc-reservation__item {
+	padding: var(--wp--preset--spacing--30);
+	border-left: var(--wp--custom--tab--bar) solid var(--wp--preset--color--divider);
+	background: var(--wp--preset--color--board);
+}
+
+.waxsc-reservation__item strong {
+	font-size: var(--wp--preset--font-size--large);
+	font-stretch: 75%;
+}
+
+.waxsc-reservation__field label,
+.waxsc-reservation__consent {
+	font-size: var(--wp--preset--font-size--small);
+}
+
+.waxsc-reservation__field input,
+.waxsc-reservation__field textarea {
+	padding: 0.65rem 0.75rem;
+	border: 1px solid var(--wp--preset--color--ink);
+	border-radius: 3px;
+	background: var(--wp--preset--color--board);
+	color: var(--wp--preset--color--ink);
+}
+
+.waxsc-reservation [aria-invalid="true"] {
+	border-width: 2px;
+	border-color: var(--wp--preset--color--sticker);
+}
+
+.waxsc-reservation__error {
+	border-left-color: var(--wp--preset--color--sticker);
+	background: var(--wp--preset--color--board);
+}
+
+.waxsc-reservation__sent {
+	border-left-color: var(--wp--preset--color--divider);
+	background: var(--wp--preset--color--board);
+}
+
+/* Shop opening status. */
+.waxsc-status {
+	font-family: var(--wp--preset--font-family--archivo);
+	font-size: var(--wp--preset--font-size--small);
+}
+
+.waxsc-status__now {
+	font-weight: 700;
+}
+
+.waxsc-status__address,
+.waxsc-status__address a {
+	color: var(--wp--preset--color--groove);
+}
+
+.waxsc-status__week th {
+	color: var(--wp--preset--color--groove);
+}
+
+.waxsc-status__week .is-today th,
+.waxsc-status__week .is-today td {
+	color: var(--wp--preset--color--ink);
+	box-shadow: inset 0 -3px 0 var(--wp--preset--color--divider);
+}
+
+/* Add to cart (catalog plugin, WooCommerce mode). */
+.waxsc-cart__field label {
+	font-size: var(--wp--preset--font-size--small);
+}
+
+.waxsc-cart__field select,
+.waxsc-cart__field input {
+	padding: 0.55rem 0.75rem;
+	border: 1px solid var(--wp--preset--color--ink);
+	border-radius: 3px;
+	background: var(--wp--preset--color--board);
+	color: var(--wp--preset--color--ink);
+}

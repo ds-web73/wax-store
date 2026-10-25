@@ -1,0 +1,287 @@
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: wax-store\n"
+"Language: fr_FR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Domain: wax-store\n"
+
+#: style.css
+msgid "Wax Store"
+msgstr "Wax Store"
+
+#: style.css
+msgid ""
+"A block theme for record shops and second-hand music dealers: vinyl, CD, "
+"cassettes and merchandise. Covers take center stage, sections and the artist"
+" index look like the dividers of a record bin, and prices sit on round "
+"stickers. Works on its own for a shop blog and pages; pair it with the Wax "
+"Store Catalog plugin for the catalog, filters, grading and copies for sale."
+msgstr ""
+"Un thème par blocs pour les disquaires et revendeurs de musique d’occasion :"
+" vinyles, CD, cassettes et merchandising. Les pochettes sont mises en avant,"
+" les sections et l’index des artistes reprennent les intercalaires des bacs,"
+" et les prix s’affichent sur des pastilles rondes. Fonctionne seul pour un "
+"blog et des pages ; associez-le à l’extension Wax Store Catalog pour le "
+"catalogue, les filtres, le grading et les exemplaires en vente."
+
+#: style.css
+msgid "DS-Web"
+msgstr "DS-Web"
+
+#: functions.php:40
+msgid "Bin divider"
+msgstr "Intercalaire"
+
+#: functions.php:55
+msgid "Record shop"
+msgstr "Disquaire"
+
+#: functions.php:56
+msgid ""
+"Sections for a record shop: welcome, practical information, bin dividers."
+msgstr "Sections pour un disquaire : accueil, infos pratiques, intercalaires."
+
+#: patterns/404.php
+msgctxt "Pattern title"
+msgid "Page not found"
+msgstr "Page introuvable"
+
+#: patterns/404.php:14
+msgid "This page is not in the bins"
+msgstr "Cette page n’est pas dans les bacs"
+
+#: patterns/404.php:19
+msgid ""
+"The address may be wrong, or the page has moved. Search the site or go back "
+"to the home page."
+msgstr ""
+"L’adresse est peut-être erronée, ou la page a été déplacée. Faites une "
+"recherche ou revenez à l’accueil."
+
+#: patterns/divider-section.php
+msgctxt "Pattern title"
+msgid "Bin divider"
+msgstr "Intercalaire"
+
+#: patterns/divider-section.php
+msgctxt "Pattern description"
+msgid "A section title on a bin divider tab, followed by a short text."
+msgstr ""
+"Un titre de section sur un onglet d’intercalaire, suivi d’un court texte."
+
+#: patterns/divider-section.php:15
+msgid "New arrivals"
+msgstr "Nouveaux arrivages"
+
+#: patterns/divider-section.php:20
+msgid "Fresh from the latest collections we bought. First come, first served."
+msgstr ""
+"Tout frais, issus des dernières collections rachetées. Premier arrivé, "
+"premier servi."
+
+#: patterns/footer.php
+msgctxt "Pattern title"
+msgid "Footer"
+msgstr "Pied de page"
+
+#: patterns/footer.php:34
+msgid "Record shop powered by %s"
+msgstr "Disquaire propulsé par %s"
+
+#: patterns/footer.php:34
+msgid "https://wordpress.org"
+msgstr "https://fr.wordpress.org"
+
+#: patterns/no-results.php
+msgctxt "Pattern title"
+msgid "No results"
+msgstr "Aucun résultat"
+
+#: patterns/no-results.php:12
+msgid "Nothing matches your search. Try other words."
+msgstr "Rien ne correspond à votre recherche. Essayez d’autres mots."
+
+#: patterns/practical-info.php
+msgctxt "Pattern title"
+msgid "Practical information"
+msgstr "Infos pratiques"
+
+#: patterns/practical-info.php
+msgctxt "Pattern description"
+msgid "Address, opening hours and how to sell your records."
+msgstr "Adresse, horaires et comment nous vendre vos disques."
+
+#: patterns/practical-info.php:15
+msgid "Visit the shop"
+msgstr "Venir à la boutique"
+
+#: patterns/practical-info.php:24
+msgid "Address"
+msgstr "Adresse"
+
+#: patterns/practical-info.php:27
+msgid "Street and number"
+msgstr "Numéro et rue"
+
+#: patterns/practical-info.php:27
+msgid "Postal code and city"
+msgstr "Code postal et ville"
+
+#: patterns/practical-info.php:34
+msgid "Opening hours"
+msgstr "Horaires"
+
+#: patterns/practical-info.php:37
+msgid "Tuesday to Saturday, 11 am to 7 pm"
+msgstr "Du mardi au samedi, de 11 h à 19 h"
+
+#: patterns/practical-info.php:44
+msgid "Selling your records"
+msgstr "Vendre vos disques"
+
+#: patterns/practical-info.php:47
+msgid ""
+"We buy collections of any size. Bring them in or send us a list with photos."
+msgstr ""
+"Nous rachetons les collections de toutes tailles. Apportez-les ou envoyez-"
+"nous une liste avec photos."
+
+#: patterns/shop-intro.php
+msgctxt "Pattern title"
+msgid "Shop welcome"
+msgstr "Accueil de la boutique"
+
+#: patterns/shop-intro.php
+msgctxt "Pattern description"
+msgid "Shop name, what you sell and a link to the catalog."
+msgstr "Nom de la boutique, ce que vous vendez et un lien vers le catalogue."
+
+#: patterns/shop-intro.php:16
+msgid "New and second-hand records, dug out every week"
+msgstr "Disques neufs et d’occasion, dénichés chaque semaine"
+
+#: patterns/shop-intro.php:19
+msgid ""
+"Vinyl, CDs and tapes, from rock to jazz. Every copy is checked and graded "
+"before it reaches the bins."
+msgstr ""
+"Vinyles, CD et cassettes, du rock au jazz. Chaque exemplaire est vérifié et "
+"gradé avant d’arriver dans les bacs."
+
+#: patterns/shop-intro.php:24
+msgid "Browse the catalog"
+msgstr "Parcourir le catalogue"
+
+#: theme.json
+msgctxt "Color name"
+msgid "Sleeve"
+msgstr "Pochette"
+
+#: theme.json
+msgctxt "Color name"
+msgid "Ink"
+msgstr "Encre"
+
+#: theme.json
+msgctxt "Color name"
+msgid "Groove"
+msgstr "Sillon"
+
+#: theme.json
+msgctxt "Color name"
+msgid "Divider"
+msgstr "Intercalaire"
+
+#: theme.json
+msgctxt "Color name"
+msgid "Price sticker"
+msgstr "Pastille de prix"
+
+#: theme.json
+msgctxt "Color name"
+msgid "Board"
+msgstr "Carton"
+
+#: theme.json
+msgctxt "Font family name"
+msgid "Archivo"
+msgstr "Archivo"
+
+#: theme.json
+msgctxt "Font family name"
+msgid "Source Serif 4"
+msgstr "Source Serif 4"
+
+#: theme.json
+msgctxt "Font size name"
+msgid "Small"
+msgstr "Petite"
+
+#: theme.json
+msgctxt "Font size name"
+msgid "Medium"
+msgstr "Moyenne"
+
+#: theme.json
+msgctxt "Font size name"
+msgid "Large"
+msgstr "Grande"
+
+#: theme.json
+msgctxt "Font size name"
+msgid "Extra large"
+msgstr "Très grande"
+
+#: theme.json
+msgctxt "Font size name"
+msgid "Huge"
+msgstr "Énorme"
+
+#: theme.json
+msgctxt "Space size name"
+msgid "Tiny"
+msgstr "Minuscule"
+
+#: theme.json
+msgctxt "Space size name"
+msgid "Small"
+msgstr "Petit"
+
+#: theme.json
+msgctxt "Space size name"
+msgid "Medium"
+msgstr "Moyen"
+
+#: theme.json
+msgctxt "Space size name"
+msgid "Large"
+msgstr "Grand"
+
+#: theme.json
+msgctxt "Space size name"
+msgid "Extra large"
+msgstr "Très grand"
+
+#: theme.json
+msgctxt "Custom template name"
+msgid "Page without title"
+msgstr "Page sans titre"
+
+#: theme.json
+msgctxt "Template part name"
+msgid "Header"
+msgstr "En-tête"
+
+#: theme.json
+msgctxt "Template part name"
+msgid "Footer"
+msgstr "Pied de page"
+
+#: theme.json
+msgctxt "Style variation name"
+msgid "Vinyl"
+msgstr "Vinyle"
