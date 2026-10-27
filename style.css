@@ -7,7 +7,7 @@ Description: A block theme for record shops and second-hand music dealers: vinyl
 Requires at least: 6.7
 Tested up to: 7.1
 Requires PHP: 7.4
-Version: 0.1.12
+Version: 0.2.1
 License: GNU General Public License v2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: wax-store
@@ -101,7 +101,14 @@ h1, h2, h3, h4,
 	margin-right: auto !important;
 }
 
-/* Header and footer. */
+/* Header and footer: explicit side margins, the automatic root padding is
+   not always applied to template parts. */
+.site-header,
+.site-footer {
+	padding-left: var(--wp--style--root--padding-left, var(--wp--preset--spacing--40));
+	padding-right: var(--wp--style--root--padding-right, var(--wp--preset--spacing--40));
+}
+
 .site-header {
 	padding-block: var(--wp--preset--spacing--40);
 }

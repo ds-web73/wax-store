@@ -3,7 +3,7 @@ Contributors: dsweb73
 Requires at least: 6.7
 Tested up to: 7.1
 Requires PHP: 7.4
-Version: 0.1.12
+Version: 0.2.1
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -28,7 +28,17 @@ The theme works on its own for a shop blog and pages. For the catalog (releases,
 
 Go to Appearance > Editor > Styles. The palette and both font families can be changed there, or switch to the Vinyl style variation.
 
+== Recommended plugin ==
+
+Wax Store is designed together with the Wax Store Catalog plugin, which adds the record shop catalog: release pages with copies and grading, artist index, filters and search, Discogs import, reservations, alerts and labels. The theme works without it as a regular block theme; a dismissible notice in the Dashboard suggests installing it.
+
 == Changelog ==
+
+= 0.2.1 =
+* Fix: header and footer side margins, which some setups did not apply.
+
+= 0.2.0 =
+* Dismissible notice recommending the Wax Store Catalog plugin (Dashboard and Themes screens, administrators only).
 
 = 0.1.12 =
 * WordPress.org contributor.

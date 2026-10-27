@@ -2,9 +2,9 @@
 # This file is distributed under the GNU General Public License v2 or later.
 msgid ""
 msgstr ""
-"Project-Id-Version: Wax Store 0.1.10\n"
+"Project-Id-Version: Wax Store 0.2.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/theme/wax-store\n"
-"POT-Creation-Date: 2026-10-24T20:27:06+00:00\n"
+"POT-Creation-Date: 2026-10-25T23:19:53+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,6 +17,11 @@ msgstr ""
 #. Theme Name of the theme
 #: style.css
 msgid "Wax Store"
+msgstr ""
+
+#. Theme URI of the theme
+#: style.css
+msgid "https://github.com/ds-web73/wax-store"
 msgstr ""
 
 #. Description of the theme
@@ -34,6 +39,11 @@ msgstr ""
 msgid "DS-Web"
 msgstr ""
 
+#. Author URI of the theme
+#: style.css
+msgid "https://github.com/ds-web73"
+msgstr ""
+
 #: functions.php:40
 msgid "Bin divider"
 msgstr ""
@@ -45,6 +55,33 @@ msgstr ""
 #: functions.php:56
 msgid ""
 "Sections for a record shop: welcome, practical information, bin dividers."
+msgstr ""
+
+#: inc/plugin-notice.php:43
+msgid "Activate Wax Store Catalog"
+msgstr ""
+
+#: inc/plugin-notice.php:46
+msgid "Install Wax Store Catalog"
+msgstr ""
+
+#: inc/plugin-notice.php:52
+msgid "Wax Store works best with the Wax Store Catalog plugin."
+msgstr ""
+
+#: inc/plugin-notice.php:53
+msgid ""
+"It adds the record shop catalog: release pages with copies and grading, "
+"artist index, filters and search, Discogs import, reservations, alerts and "
+"labels. The theme displays it as it was designed for."
+msgstr ""
+
+#: inc/plugin-notice.php:56
+msgid "More about the plugin"
+msgstr ""
+
+#: inc/plugin-notice.php:57
+msgid "Dismiss"
 msgstr ""
 
 #: patterns/404.php

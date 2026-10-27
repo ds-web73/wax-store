@@ -14,6 +14,10 @@ msgid "Wax Store"
 msgstr "Wax Store"
 
 #: style.css
+msgid "https://github.com/ds-web73/wax-store"
+msgstr "https://github.com/ds-web73/wax-store"
+
+#: style.css
 msgid ""
 "A block theme for record shops and second-hand music dealers: vinyl, CD, "
 "cassettes and merchandise. Covers take center stage, sections and the artist"
@@ -32,6 +36,10 @@ msgstr ""
 msgid "DS-Web"
 msgstr "DS-Web"
 
+#: style.css
+msgid "https://github.com/ds-web73"
+msgstr "https://github.com/ds-web73"
+
 #: functions.php:40
 msgid "Bin divider"
 msgstr "Intercalaire"
@@ -44,6 +52,37 @@ msgstr "Disquaire"
 msgid ""
 "Sections for a record shop: welcome, practical information, bin dividers."
 msgstr "Sections pour un disquaire : accueil, infos pratiques, intercalaires."
+
+#: inc/plugin-notice.php:43
+msgid "Activate Wax Store Catalog"
+msgstr "Activer Wax Store Catalog"
+
+#: inc/plugin-notice.php:46
+msgid "Install Wax Store Catalog"
+msgstr "Installer Wax Store Catalog"
+
+#: inc/plugin-notice.php:52
+msgid "Wax Store works best with the Wax Store Catalog plugin."
+msgstr ""
+"Wax Store donne le meilleur de lui-même avec l’extension Wax Store Catalog."
+
+#: inc/plugin-notice.php:53
+msgid ""
+"It adds the record shop catalog: release pages with copies and grading, "
+"artist index, filters and search, Discogs import, reservations, alerts and "
+"labels. The theme displays it as it was designed for."
+msgstr ""
+"Elle ajoute le catalogue du disquaire : fiches avec exemplaires et grading, "
+"index des artistes, filtres et recherche, import Discogs, réservations, "
+"alertes et étiquettes. Le thème l’affiche tel qu’il a été conçu."
+
+#: inc/plugin-notice.php:56
+msgid "More about the plugin"
+msgstr "En savoir plus sur l’extension"
+
+#: inc/plugin-notice.php:57
+msgid "Dismiss"
+msgstr "Ne plus afficher"
 
 #: patterns/404.php
 msgctxt "Pattern title"

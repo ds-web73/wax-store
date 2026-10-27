@@ -59,3 +59,7 @@ if ( ! function_exists( 'waxstore_pattern_categories' ) ) {
 	}
 }
 add_action( 'init', 'waxstore_pattern_categories' );
+
+if ( is_admin() ) {
+	require get_template_directory() . '/inc/plugin-notice.php';
+}
