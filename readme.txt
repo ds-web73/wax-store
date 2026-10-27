@@ -3,7 +3,7 @@ Contributors: dsweb73
 Requires at least: 6.7
 Tested up to: 7.1
 Requires PHP: 7.4
-Version: 0.2.1
+Version: 0.2.2
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -33,6 +33,9 @@ Go to Appearance > Editor > Styles. The palette and both font families can be ch
 Wax Store is designed together with the Wax Store Catalog plugin, which adds the record shop catalog: release pages with copies and grading, artist index, filters and search, Discogs import, reservations, alerts and labels. The theme works without it as a regular block theme; a dismissible notice in the Dashboard suggests installing it.
 
 == Changelog ==
+
+= 0.2.2 =
+* Fix: wide sections in pages (home page catalog, hero) were held in the reading column; they now extend to the wide size, aligned with the header.
 
 = 0.2.1 =
 * Fix: header and footer side margins, which some setups did not apply.
