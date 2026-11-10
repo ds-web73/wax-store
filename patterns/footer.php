@@ -9,6 +9,8 @@
  * @package Wax_Store
  */
 
+defined( 'ABSPATH' ) || exit;
+
 ?>
 <!-- wp:group {"className":"site-footer","layout":{"type":"constrained","contentSize":"1280px"}} -->
 <div class="wp-block-group site-footer">

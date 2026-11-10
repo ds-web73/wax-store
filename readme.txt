@@ -3,7 +3,7 @@ Contributors: dsweb73
 Requires at least: 6.7
 Tested up to: 7.1
 Requires PHP: 7.4
-Version: 0.2.2
+Version: 1.0.1
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -32,7 +32,38 @@ Go to Appearance > Editor > Styles. The palette and both font families can be ch
 
 Wax Store is designed together with the Wax Store Catalog plugin, which adds the record shop catalog: release pages with copies and grading, artist index, filters and search, Discogs import, reservations, alerts and labels. The theme works without it as a regular block theme; a dismissible notice in the Dashboard suggests installing it.
 
+== Privacy ==
+
+Wax Store does not collect, store or send any personal data, and makes no request to external services: fonts and images are bundled with the theme.
+
+The only data the theme stores is a user meta flag, waxstore_dismiss_catalog_notice, saved when an administrator dismisses the notice recommending the Wax Store Catalog plugin. It stays in the site database and never leaves the site.
+
+== Fonts and languages ==
+
+The fonts are bundled as subsets, each declared with its own unicode-range, so browsers only download the subsets a page needs:
+
+* Archivo: Latin, Latin Extended and Vietnamese, upright and italic. Archivo has no Cyrillic or Greek characters; text in these scripts falls back to Archivo Narrow, Roboto Condensed, Arial Narrow, Helvetica Neue or Arial, whichever is installed.
+* Source Serif 4: Latin, Latin Extended, Cyrillic, Cyrillic Extended, Greek and Vietnamese, upright and italic.
+
+== Upgrade Notice ==
+
+= 1.0.1 =
+Fonts now cover Latin Extended, Vietnamese, and for Source Serif 4 Cyrillic and Greek; Archivo italic added. Better contrast in the Vinyl style variation.
+
 == Changelog ==
+
+= 1.0.1 =
+* Fonts: every Fontsource subset bundled with its unicode-range (Latin Extended, Vietnamese, and Cyrillic and Greek for Source Serif 4); Archivo italic added; stronger fallback fonts.
+* Vinyl style variation: sold sticker text and invalid field borders meet WCAG contrast.
+* Direct access guard in pattern files; no inline style in the admin notice; translation template regenerated.
+* readme: privacy, upgrade notice and detailed resources.
+
+
+= 1.0.0 =
+* First release on WordPress.org.
+* The plugin notice links to the Wax Store Catalog page on WordPress.org.
+* Translations come from WordPress.org language packs; bundled translation files removed.
+* New screenshot.
 
 = 0.2.2 =
 * Fix: wide sections in pages (home page catalog, hero) were held in the reading column; they now extend to the wide size, aligned with the header.
@@ -101,12 +132,29 @@ GNU General Public License for more details.
 
 == Resources ==
 
-* Archivo, Copyright 2020 The Archivo Project Authors (https://github.com/Omnibus-Type/Archivo)
-  License: SIL Open Font License, 1.1, https://openfontlicense.org
-  Source: https://fontsource.org/fonts/archivo
+Fonts. The .woff2 files are unmodified copies of the subset files published by Fontsource (https://fontsource.org), which builds them from the upstream font repositories. No subsetting or other change was made by DS-Web.
 
-* Source Serif 4, Copyright 2014-2021 Adobe Systems Incorporated (http://www.adobe.com/), with Reserved Font Name 'Source'
-  License: SIL Open Font License, 1.1, https://openfontlicense.org
-  Source: https://fontsource.org/fonts/source-serif-4
+* Archivo
+  Files: assets/fonts/archivo-latin-ext-standard-italic.woff2, assets/fonts/archivo-latin-ext-standard-normal.woff2, assets/fonts/archivo-latin-standard-italic.woff2, assets/fonts/archivo-latin-standard-normal.woff2, assets/fonts/archivo-vietnamese-standard-italic.woff2, assets/fonts/archivo-vietnamese-standard-normal.woff2
+  Author: The Archivo Project Authors (Omnibus-Type)
+  Copyright: 2020 The Archivo Project Authors (https://github.com/Omnibus-Type/Archivo)
+  License: SIL Open Font License, Version 1.1 (https://openfontlicense.org), full text in assets/fonts/OFL-Archivo.txt
+  Upstream source: https://github.com/Omnibus-Type/Archivo
+  Package: @fontsource-variable/archivo 5.3.0, https://www.npmjs.com/package/@fontsource-variable/archivo (files from https://github.com/fontsource/font-files)
 
-* Screenshot: original illustrations by DS-Web, released under GPLv2 or later. The covers are abstract shapes, not real album art.
+* Source Serif 4
+  Files: assets/fonts/source-serif-4-cyrillic-ext-standard-italic.woff2, assets/fonts/source-serif-4-cyrillic-ext-standard-normal.woff2, assets/fonts/source-serif-4-cyrillic-standard-italic.woff2, assets/fonts/source-serif-4-cyrillic-standard-normal.woff2, assets/fonts/source-serif-4-greek-standard-italic.woff2, assets/fonts/source-serif-4-greek-standard-normal.woff2, assets/fonts/source-serif-4-latin-ext-standard-italic.woff2, assets/fonts/source-serif-4-latin-ext-standard-normal.woff2, assets/fonts/source-serif-4-latin-standard-italic.woff2, assets/fonts/source-serif-4-latin-standard-normal.woff2, assets/fonts/source-serif-4-vietnamese-standard-italic.woff2, assets/fonts/source-serif-4-vietnamese-standard-normal.woff2
+  Author: Frank Grießhammer, Adobe
+  Copyright: 2014-2021 Adobe (http://www.adobe.com/), with Reserved Font Name 'Source'
+  License: SIL Open Font License, Version 1.1 (https://openfontlicense.org), full text in assets/fonts/OFL-Source-Serif-4.txt
+  Upstream source: https://github.com/adobe-fonts/source-serif
+  Package: @fontsource-variable/source-serif-4 5.3.1, https://www.npmjs.com/package/@fontsource-variable/source-serif-4 (files from https://github.com/fontsource/font-files)
+
+* License files
+  assets/fonts/OFL-Archivo.txt and assets/fonts/OFL-Source-Serif-4.txt: the SIL Open Font License texts shipped with the fonts above, copied from the same Fontsource packages.
+
+* Screenshot
+  File: screenshot.png
+  Author and copyright: DS-Web, 2026
+  License: GPLv2 or later, same as the theme
+  Content: the theme with fictional content created by DS-Web; the images are abstract illustrations generated by DS-Web, not real album art or photographs.

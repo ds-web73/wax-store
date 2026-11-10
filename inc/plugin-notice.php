@@ -53,8 +53,8 @@ if ( ! function_exists( 'waxstore_catalog_notice' ) ) {
 			<p><?php esc_html_e( 'It adds the record shop catalog: release pages with copies and grading, artist index, filters and search, Discogs import, reservations, alerts and labels. The theme displays it as it was designed for.', 'wax-store' ); ?></p>
 			<p>
 				<a class="button button-primary" href="<?php echo esc_url( $url ); ?>"><?php echo esc_html( $label ); ?></a>
-				<a class="button" href="https://github.com/ds-web73/wax-store-catalog"><?php esc_html_e( 'More about the plugin', 'wax-store' ); ?></a>
-				<a href="<?php echo esc_url( $dismiss ); ?>" style="margin-left:8px"><?php esc_html_e( 'Dismiss', 'wax-store' ); ?></a>
+				<a class="button" href="https://wordpress.org/plugins/wax-store-catalog/"><?php esc_html_e( 'More about the plugin', 'wax-store' ); ?></a>
+				<a class="button button-link" href="<?php echo esc_url( $dismiss ); ?>"><?php esc_html_e( 'Dismiss', 'wax-store' ); ?></a>
 			</p>
 		</div>
 		<?php

@@ -9,11 +9,10 @@ defined( 'ABSPATH' ) || exit;
 
 if ( ! function_exists( 'waxstore_setup' ) ) {
 	/**
-	 * Editor styles and bundled translations (WordPress.org language packs take precedence).
+	 * Editor styles. Translations come from WordPress.org language packs.
 	 */
 	function waxstore_setup() {
 		add_editor_style( 'style.css' );
-		load_theme_textdomain( 'wax-store', get_template_directory() . '/languages' );
 	}
 }
 add_action( 'after_setup_theme', 'waxstore_setup' );

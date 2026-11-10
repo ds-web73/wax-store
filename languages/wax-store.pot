@@ -2,9 +2,9 @@
 # This file is distributed under the GNU General Public License v2 or later.
 msgid ""
 msgstr ""
-"Project-Id-Version: Wax Store 0.2.0\n"
+"Project-Id-Version: Wax Store 1.0.1\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/theme/wax-store\n"
-"POT-Creation-Date: 2026-10-25T23:19:53+00:00\n"
+"POT-Creation-Date: 2026-11-10T19:06:28+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Domain: wax-store\n"
-"X-Generator: WP-CLI 2.12.0\n"
+"X-Generator: WP-CLI 2.11.0\n"
 
 #. Theme Name of the theme
 #: style.css
@@ -44,15 +44,15 @@ msgstr ""
 msgid "https://github.com/ds-web73"
 msgstr ""
 
-#: functions.php:40
+#: functions.php:39
 msgid "Bin divider"
 msgstr ""
 
-#: functions.php:55
+#: functions.php:54
 msgid "Record shop"
 msgstr ""
 
-#: functions.php:56
+#: functions.php:55
 msgid ""
 "Sections for a record shop: welcome, practical information, bin dividers."
 msgstr ""
@@ -89,11 +89,11 @@ msgctxt "Pattern title"
 msgid "Page not found"
 msgstr ""
 
-#: patterns/404.php:14
+#: patterns/404.php:16
 msgid "This page is not in the bins"
 msgstr ""
 
-#: patterns/404.php:19
+#: patterns/404.php:21
 msgid ""
 "The address may be wrong, or the page has moved. Search the site or go back "
 "to the home page."
@@ -109,11 +109,11 @@ msgctxt "Pattern description"
 msgid "A section title on a bin divider tab, followed by a short text."
 msgstr ""
 
-#: patterns/divider-section.php:15
+#: patterns/divider-section.php:17
 msgid "New arrivals"
 msgstr ""
 
-#: patterns/divider-section.php:20
+#: patterns/divider-section.php:22
 msgid "Fresh from the latest collections we bought. First come, first served."
 msgstr ""
 
@@ -123,13 +123,12 @@ msgid "Footer"
 msgstr ""
 
 #. translators: %s: WordPress link.
-#: patterns/footer.php:34
-#, php-format
+#: patterns/footer.php:36
 msgid "Record shop powered by %s"
 msgstr ""
 
 #. translators: %s: WordPress link.
-#: patterns/footer.php:34
+#: patterns/footer.php:36
 msgid "https://wordpress.org"
 msgstr ""
 
@@ -138,7 +137,7 @@ msgctxt "Pattern title"
 msgid "No results"
 msgstr ""
 
-#: patterns/no-results.php:12
+#: patterns/no-results.php:14
 msgid "Nothing matches your search. Try other words."
 msgstr ""
 
@@ -152,35 +151,35 @@ msgctxt "Pattern description"
 msgid "Address, opening hours and how to sell your records."
 msgstr ""
 
-#: patterns/practical-info.php:15
+#: patterns/practical-info.php:17
 msgid "Visit the shop"
 msgstr ""
 
-#: patterns/practical-info.php:24
+#: patterns/practical-info.php:26
 msgid "Address"
 msgstr ""
 
-#: patterns/practical-info.php:27
+#: patterns/practical-info.php:29
 msgid "Street and number"
 msgstr ""
 
-#: patterns/practical-info.php:27
+#: patterns/practical-info.php:29
 msgid "Postal code and city"
 msgstr ""
 
-#: patterns/practical-info.php:34
+#: patterns/practical-info.php:36
 msgid "Opening hours"
 msgstr ""
 
-#: patterns/practical-info.php:37
+#: patterns/practical-info.php:39
 msgid "Tuesday to Saturday, 11 am to 7 pm"
 msgstr ""
 
-#: patterns/practical-info.php:44
+#: patterns/practical-info.php:46
 msgid "Selling your records"
 msgstr ""
 
-#: patterns/practical-info.php:47
+#: patterns/practical-info.php:49
 msgid ""
 "We buy collections of any size. Bring them in or send us a list with photos."
 msgstr ""
@@ -195,17 +194,17 @@ msgctxt "Pattern description"
 msgid "Shop name, what you sell and a link to the catalog."
 msgstr ""
 
-#: patterns/shop-intro.php:16
+#: patterns/shop-intro.php:18
 msgid "New and second-hand records, dug out every week"
 msgstr ""
 
-#: patterns/shop-intro.php:19
+#: patterns/shop-intro.php:21
 msgid ""
 "Vinyl, CDs and tapes, from rock to jazz. Every copy is checked and graded "
 "before it reaches the bins."
 msgstr ""
 
-#: patterns/shop-intro.php:24
+#: patterns/shop-intro.php:26
 msgid "Browse the catalog"
 msgstr ""
 

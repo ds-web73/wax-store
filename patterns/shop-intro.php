@@ -8,6 +8,8 @@
  * @package Wax_Store
  */
 
+defined( 'ABSPATH' ) || exit;
+
 $waxstore_catalog = post_type_exists( 'waxsc_release' ) ? get_post_type_archive_link( 'waxsc_release' ) : home_url( '/' );
 ?>
 <!-- wp:group {"align":"wide","layout":{"type":"default"},"style":{"spacing":{"padding":{"top":"var:preset|spacing|50","bottom":"var:preset|spacing|50"}}}} -->

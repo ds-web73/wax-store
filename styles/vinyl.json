@@ -36,6 +36,10 @@
 					"color": "#262A32"
 				}
 			]
+		},
+		"custom": {
+			"onSold": "var(--wp--preset--color--sleeve)",
+			"invalid": "#F0735C"
 		}
 	},
 	"styles": {

@@ -7,6 +7,8 @@
  * @package Wax_Store
  */
 
+defined( 'ABSPATH' ) || exit;
+
 ?>
 <!-- wp:group {"className":"is-style-divider","layout":{"type":"default"}} -->
 <div class="wp-block-group is-style-divider">
