@@ -7,12 +7,14 @@ Description: A block theme for record shops and second-hand music dealers: vinyl
 Requires at least: 6.7
 Tested up to: 7.1
 Requires PHP: 7.4
-Version: 1.0.2
+Version: 1.0.3
 License: GNU General Public License v2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: wax-store
 Domain Path: /languages
-Tags: e-commerce, blog, entertainment, grid-layout, one-column, block-patterns, block-styles, custom-colors, editor-style, full-site-editing, style-variations, translation-ready, wide-blocks
+Tags: e-commerce, blog, entertainment, grid-layout, one-column, block-patterns, block-styles, editor-style, full-site-editing, style-variations, translation-ready, wide-blocks
+Wax Store, (C) 2026 DS-Web.
+Wax Store is distributed under the terms of the GNU General Public License v2 or later.
 */
 
 /* Colors of the catalog plugin elements (price sticker, sold sticker, record placeholder). */
