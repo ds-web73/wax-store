@@ -3,7 +3,7 @@ Contributors: dsweb73
 Requires at least: 6.7
 Tested up to: 7.1
 Requires PHP: 7.4
-Version: 1.0.3
+Version: 1.0.4
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -47,23 +47,39 @@ The fonts are bundled as subsets, each declared with its own unicode-range, so b
 
 == Upgrade Notice ==
 
-= 1.0.3
-In css file header: add copyright line which missing and remove a tag, as suggested the reviewer
+= 1.0.4 =
+The "Bin divider" block style gets a prefixed name; sections created with earlier versions keep their look. No other visual change.
 
-= 1.0.2
-Change screenshot picture
+= 1.0.3 =
+Adds the copyright notice to the stylesheet header. No visual change.
+
+= 1.0.2 =
+New theme screenshot. No visual change.
 
 = 1.0.1 =
 Fonts now cover Latin Extended, Vietnamese, and for Source Serif 4 Cyrillic and Greek; Archivo italic added. Better contrast in the Vinyl style variation.
 
 == Changelog ==
 
+= 1.0.4 =
+* Copyright notice in the stylesheet header in the standard form.
+* Font licence files replaced by the upstream OFL texts (Omnibus-Type/Archivo and adobe-fonts/source-serif); readme copyright lines match them.
+* Block style renamed from "divider" to "wax-store-divider"; the old class keeps its styles for content saved earlier.
+* Translations: load_theme_textdomain() added; translation template regenerated.
+* readme: upgrade notice headings fixed, changelog completed.
+
+= 1.0.3 =
+* Copyright notice added to the stylesheet header.
+* "custom-colors" tag removed.
+
+= 1.0.2 =
+* New screenshot: the theme alone, with fictional content.
+
 = 1.0.1 =
 * Fonts: every Fontsource subset bundled with its unicode-range (Latin Extended, Vietnamese, and Cyrillic and Greek for Source Serif 4); Archivo italic added; stronger fallback fonts.
 * Vinyl style variation: sold sticker text and invalid field borders meet WCAG contrast.
 * Direct access guard in pattern files; no inline style in the admin notice; translation template regenerated.
 * readme: privacy, upgrade notice and detailed resources.
-
 
 = 1.0.0 =
 * First release on WordPress.org.
@@ -123,8 +139,8 @@ Fonts now cover Latin Extended, Vietnamese, and for Source Serif 4 Cyrillic and 
 
 == Copyright ==
 
-Wax Store WordPress Theme, (C) 2026 DS-Web.
-Wax Store is distributed under the terms of the GNU GPL.
+Wax Store WordPress Theme, Copyright 2026 DS-Web.
+Wax Store is distributed under the terms of the GNU General Public License v2 or later.
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
@@ -143,7 +159,7 @@ Fonts. The .woff2 files are unmodified copies of the subset files published by F
 * Archivo
   Files: assets/fonts/archivo-latin-ext-standard-italic.woff2, assets/fonts/archivo-latin-ext-standard-normal.woff2, assets/fonts/archivo-latin-standard-italic.woff2, assets/fonts/archivo-latin-standard-normal.woff2, assets/fonts/archivo-vietnamese-standard-italic.woff2, assets/fonts/archivo-vietnamese-standard-normal.woff2
   Author: The Archivo Project Authors (Omnibus-Type)
-  Copyright: 2020 The Archivo Project Authors (https://github.com/Omnibus-Type/Archivo)
+  Copyright notice: Copyright 2020 The Archivo Project Authors (https://github.com/Omnibus-Type/Archivo)
   License: SIL Open Font License, Version 1.1 (https://openfontlicense.org), full text in assets/fonts/OFL-Archivo.txt
   Upstream source: https://github.com/Omnibus-Type/Archivo
   Package: @fontsource-variable/archivo 5.3.0, https://www.npmjs.com/package/@fontsource-variable/archivo (files from https://github.com/fontsource/font-files)
@@ -151,13 +167,14 @@ Fonts. The .woff2 files are unmodified copies of the subset files published by F
 * Source Serif 4
   Files: assets/fonts/source-serif-4-cyrillic-ext-standard-italic.woff2, assets/fonts/source-serif-4-cyrillic-ext-standard-normal.woff2, assets/fonts/source-serif-4-cyrillic-standard-italic.woff2, assets/fonts/source-serif-4-cyrillic-standard-normal.woff2, assets/fonts/source-serif-4-greek-standard-italic.woff2, assets/fonts/source-serif-4-greek-standard-normal.woff2, assets/fonts/source-serif-4-latin-ext-standard-italic.woff2, assets/fonts/source-serif-4-latin-ext-standard-normal.woff2, assets/fonts/source-serif-4-latin-standard-italic.woff2, assets/fonts/source-serif-4-latin-standard-normal.woff2, assets/fonts/source-serif-4-vietnamese-standard-italic.woff2, assets/fonts/source-serif-4-vietnamese-standard-normal.woff2
   Author: Frank Grießhammer, Adobe
-  Copyright: 2014-2021 Adobe (http://www.adobe.com/), with Reserved Font Name 'Source'
+  Copyright notice: Copyright 2014 - 2023 Adobe (http://www.adobe.com/), with Reserved Font Name ‘Source’. All Rights Reserved. Source is a trademark of Adobe in the United States and/or other countries.
   License: SIL Open Font License, Version 1.1 (https://openfontlicense.org), full text in assets/fonts/OFL-Source-Serif-4.txt
   Upstream source: https://github.com/adobe-fonts/source-serif
   Package: @fontsource-variable/source-serif-4 5.3.1, https://www.npmjs.com/package/@fontsource-variable/source-serif-4 (files from https://github.com/fontsource/font-files)
 
 * License files
-  assets/fonts/OFL-Archivo.txt and assets/fonts/OFL-Source-Serif-4.txt: the SIL Open Font License texts shipped with the fonts above, copied from the same Fontsource packages.
+  assets/fonts/OFL-Archivo.txt: copy of OFL.txt from https://github.com/Omnibus-Type/Archivo
+  assets/fonts/OFL-Source-Serif-4.txt: copy of LICENSE.md from https://github.com/adobe-fonts/source-serif (release branch)
 
 * Screenshot
   File: screenshot.png

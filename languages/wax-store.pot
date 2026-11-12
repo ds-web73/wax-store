@@ -2,9 +2,9 @@
 # This file is distributed under the GNU General Public License v2 or later.
 msgid ""
 msgstr ""
-"Project-Id-Version: Wax Store 1.0.1\n"
+"Project-Id-Version: Wax Store 1.0.4\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/theme/wax-store\n"
-"POT-Creation-Date: 2026-11-10T19:06:28+00:00\n"
+"POT-Creation-Date: 2026-11-12T21:34:43+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -44,15 +44,15 @@ msgstr ""
 msgid "https://github.com/ds-web73"
 msgstr ""
 
-#: functions.php:39
+#: functions.php:40
 msgid "Bin divider"
 msgstr ""
 
-#: functions.php:54
+#: functions.php:55
 msgid "Record shop"
 msgstr ""
 
-#: functions.php:55
+#: functions.php:56
 msgid ""
 "Sections for a record shop: welcome, practical information, bin dividers."
 msgstr ""

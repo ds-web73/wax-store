@@ -9,10 +9,11 @@ defined( 'ABSPATH' ) || exit;
 
 if ( ! function_exists( 'waxstore_setup' ) ) {
 	/**
-	 * Editor styles. Translations come from WordPress.org language packs.
+	 * Editor styles and translations.
 	 */
 	function waxstore_setup() {
 		add_editor_style( 'style.css' );
+		load_theme_textdomain( 'wax-store', get_template_directory() . '/languages' );
 	}
 }
 add_action( 'after_setup_theme', 'waxstore_setup' );
@@ -35,7 +36,7 @@ if ( ! function_exists( 'waxstore_block_styles' ) ) {
 		register_block_style(
 			'core/group',
 			array(
-				'name'  => 'divider',
+				'name'  => 'wax-store-divider',
 				'label' => __( 'Bin divider', 'wax-store' ),
 			)
 		);

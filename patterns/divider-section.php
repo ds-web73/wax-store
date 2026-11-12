@@ -11,8 +11,8 @@
 defined( 'ABSPATH' ) || exit;
 
 ?>
-<!-- wp:group {"className":"is-style-divider","layout":{"type":"default"}} -->
-<div class="wp-block-group is-style-divider">
+<!-- wp:group {"className":"is-style-wax-store-divider","layout":{"type":"default"}} -->
+<div class="wp-block-group is-style-wax-store-divider">
 <!-- wp:heading -->
 <h2 class="wp-block-heading"><?php esc_html_e( 'New arrivals', 'wax-store' ); ?></h2>
 <!-- /wp:heading -->
