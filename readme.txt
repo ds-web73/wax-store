@@ -3,7 +3,7 @@ Contributors: dsweb73
 Requires at least: 6.7
 Tested up to: 7.1
 Requires PHP: 7.4
-Version: 1.0.1
+Version: 1.0.2
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -46,6 +46,9 @@ The fonts are bundled as subsets, each declared with its own unicode-range, so b
 * Source Serif 4: Latin, Latin Extended, Cyrillic, Cyrillic Extended, Greek and Vietnamese, upright and italic.
 
 == Upgrade Notice ==
+
+= 1.0.2
+Change screenshot picture
 
 = 1.0.1 =
 Fonts now cover Latin Extended, Vietnamese, and for Source Serif 4 Cyrillic and Greek; Archivo italic added. Better contrast in the Vinyl style variation.
