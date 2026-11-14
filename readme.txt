@@ -3,7 +3,7 @@ Contributors: dsweb73
 Requires at least: 6.7
 Tested up to: 7.1
 Requires PHP: 7.4
-Version: 1.0.5
+Version: 1.0.6
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -47,6 +47,9 @@ The fonts are bundled as subsets, each declared with its own unicode-range, so b
 
 == Upgrade Notice ==
 
+= 1.0.6 =
+The header menu button now shows on tablets, phones held sideways and touch screens, where submenus could not open. Long preformatted text no longer widens the page.
+
 = 1.0.5 =
 Posts without a featured image show a stylized record in the grids; styled pagination; a lighter header and footer; pages and posts line up with the site title on wide screens.
 
@@ -63,6 +66,10 @@ New theme screenshot. No visual change.
 Fonts now cover Latin Extended, Vietnamese, and for Source Serif 4 Cyrillic and Greek; Archivo italic added. Better contrast in the Vinyl style variation.
 
 == Changelog ==
+
+= 1.0.6 =
+* Header menu: the menu button is used up to 1200px wide and on every touch screen, where hover menus cannot open submenus. The menu panel takes the colors of the style variation.
+* Preformatted text, code and tables scroll inside their own box instead of widening the page on phones; long words and links break in posts and comments.
 
 = 1.0.5 =
 * Post grids (blog, archives, search): posts without a featured image show a stylized record with the same ratio, radius and link as a real image. Its colors follow the style variation.
