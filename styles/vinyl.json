@@ -39,7 +39,12 @@
 		},
 		"custom": {
 			"onSold": "var(--wp--preset--color--sleeve)",
-			"invalid": "#F0735C"
+			"invalid": "#F0735C",
+			"record": {
+				"background": "#4A5163",
+				"disc": "#111318",
+				"label": "var(--wp--preset--color--divider)"
+			}
 		}
 	},
 	"styles": {

@@ -337,7 +337,12 @@
 			"onDivider": "#1E2433",
 			"onSticker": "#FFFFFF",
 			"onSold": "#FFFFFF",
-			"invalid": "var(--wp--preset--color--sticker)"
+			"invalid": "var(--wp--preset--color--sticker)",
+			"record": {
+				"background": "var(--wp--preset--color--groove)",
+				"disc": "var(--wp--preset--color--ink)",
+				"label": "var(--wp--preset--color--divider)"
+			}
 		}
 	},
 	"styles": {

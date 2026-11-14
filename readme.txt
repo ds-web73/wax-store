@@ -3,7 +3,7 @@ Contributors: dsweb73
 Requires at least: 6.7
 Tested up to: 7.1
 Requires PHP: 7.4
-Version: 1.0.4
+Version: 1.0.5
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -16,7 +16,7 @@ Wax Store is made for record shops and second-hand music dealers selling vinyl, 
 * Covers take center stage, square and uncropped.
 * Section titles look like the plastic dividers of a record bin ("Bin divider" style for the Group block).
 * Prices sit on round stickers, like the ones on the shrink wrap.
-* Releases without a photo show a stylized record instead of an empty space.
+* Posts without a featured image show a stylized record in the post grids (blog, archives, search), with the same shape as a real image. With the Wax Store Catalog plugin, releases without a photo get the same record.
 * Two style variations: Default (light, sleeve grey) and Vinyl (dark).
 * Patterns: shop welcome, bin divider, practical information.
 
@@ -47,6 +47,9 @@ The fonts are bundled as subsets, each declared with its own unicode-range, so b
 
 == Upgrade Notice ==
 
+= 1.0.5 =
+Posts without a featured image show a stylized record in the grids; styled pagination; a lighter header and footer; pages and posts line up with the site title on wide screens.
+
 = 1.0.4 =
 The "Bin divider" block style gets a prefixed name; sections created with earlier versions keep their look. No other visual change.
 
@@ -60,6 +63,16 @@ New theme screenshot. No visual change.
 Fonts now cover Latin Extended, Vietnamese, and for Source Serif 4 Cyrillic and Greek; Archivo italic added. Better contrast in the Vinyl style variation.
 
 == Changelog ==
+
+= 1.0.5 =
+* Post grids (blog, archives, search): posts without a featured image show a stylized record with the same ratio, radius and link as a real image. Its colors follow the style variation.
+* Pagination of post lists and comments: spacing, gap between items, clear current page, hover and focus states, wraps on phones.
+* Header: site title and tagline grouped, a thin line under the header, the menu wraps from the left edge when it is too long.
+* Footer: its own short navigation (home and privacy policy page) and a search field, instead of repeating the header menu or listing every page.
+* Single posts, pages and 404: the reading column starts on the left edge of the wide area, in line with the site title; wide and full blocks keep their alignment.
+* Archive descriptions and the search field on search results keep a reading width.
+* Comments: author and date on one line, a separator between comments.
+* Short pages: the footer stays at the bottom of the window.
 
 = 1.0.4 =
 * Copyright notice in the stylesheet header in the standard form.
